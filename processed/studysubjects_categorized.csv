@@ -14,14 +14,14 @@ B.A. Law enforcement,1,law
 B.A. Political Science and philosphy,1,social science
 B.A. Political science and public administration,1,social science
 B.A. PSPA,1,social science
-B.A. sociology ,3,social science
+B.A. sociology,3,social science
 B.A. Statistics,1,science and engineering
 B.A. with education,1,education
 B.A. with eudcation,1,education
 "B.A. with eudcation, economics and geography",1,education
 B.A.. Geography and environment,1,science and engineering
 B.com tourism and hops.mng,1,business management
-B.SC in computer science ,1,science and engineering
+B.SC in computer science,1,science and engineering
 B.sc in computer science and IT,1,science and engineering
 B.sc in mineral processing engineering,1,science and engineering
 BA ED,7,education
@@ -34,13 +34,13 @@ Bachelor of arts with education subject economics and georgraphy,1,education
 Bachelor of arts with sociology,1,humanities
 Bachelor of commerce in accounting,1,business management
 Bachelor of eudcation,1,education
-Bachelor of Gender and development in sociology ,1,social science
+Bachelor of Gender and development in sociology,1,social science
 Bachelor of law,1,law
 Bachelor of science in computer science,2,science and engineering
 Bachelor of Science in electrical engineering,1,science and engineering
 BAS,1,science and engineering
 BBA,1,humanities
-BED Pyschology ,1,social science
+BED Pyschology,1,social science
 Bs in civil engineering and water resources,1,science and engineering
 Bsc Civil Engineering and transportation engineering,1,science and engineering
 BSC Education,1,education
@@ -60,8 +60,8 @@ Civil engineering,5,science and engineering
 Civil Engineering,3,science and engineering
 Commerce subject,1,business management
 Computer,1,science and engineering
-Computer engineering ,1,science and engineering
-Computer science ,14,science and engineering
+Computer engineering,1,science and engineering
+Computer science,14,science and engineering
 Economics,32,social science
 Economics and statistics,9,social science
 Education,3,education
@@ -80,8 +80,6 @@ History and kiswahili,2,humanities
 History and literature,1,humanities
 ICT,2,science and engineering
 Kiswahili,2,humanities
-Kiswahili ,2,humanities
-
 Kiswahili and geography,2,humanities
 Language (english),1,humanities
 Law,6,law
