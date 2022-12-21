@@ -10,14 +10,15 @@
 
 ## Running script with AEA docker container
 
-This command runs a test script and writes a log file.
+This command runs all the programs and saves the output in `data/`.
 
 ```sh
 docker run --rm -ti -v /usr/local/stata17/stata.lic:/usr/local/stata/stata.lic \
-    -v ${PWD}:/code --entrypoint stata-se  dataeditors/stata17:2022-11-15 \
-    -b do test.do
+    -v ${PWD}:/code --entrypoint stata-se dataeditors/stata17:2022-11-15 \
+    -b do scripts/all_data_reads.do
 ```
 
-Some modifications are necessary in the do-file to ensure that the directories work right
-and are with respect to the top level.
+This file is run by the bash-script `main.sh`.
 
+Note that running `stata -b do all_data_reads.do` from the command line
+*should* do the same thing, but in a slightly less controlled manner.

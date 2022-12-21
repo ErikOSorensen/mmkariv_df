@@ -66,7 +66,7 @@ preserve
   save `temp25'
 restore 
 
-save ./tanzaniasurvey_specifications, replace
+save ./processed/tanzaniasurvey_specifications, replace
 
 import excel ./raw_data/data_tanzania_26JUNI.xlsx, clear ///
   sheet("Short follow-up p1") cellrange(B3:AK218) firstrow
