@@ -46,10 +46,3 @@ label var iq "points on WAIS-IV matrix test (out of 26 possible)"
 order ID
 compress
 save ../processed/playersiq, replace
-
-/*
-hist iq , disc frac title("Distribution of IQ-measure in Tanzania")
-graph export ../iq_hist.eps
-! epstopdf ../iq_hist.eps
-rm ../iq_hist.eps
-*/
