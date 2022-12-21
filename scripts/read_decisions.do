@@ -1,5 +1,5 @@
 clear all
-use ../raw/050112_S9, clear
+use ./raw_data/050112_S9, clear
 keep ID Treatment Round Y X YM XM
 drop if ID<100
 label var ID "Participant identifier"
@@ -12,6 +12,6 @@ label var XM "Maximum attainable X (at Y=0)"
 label define Treatment 0 "0.5 USD/token" 1 "100 TZS/token" 2 "1000 TZS/token"
 label values Treatment Treatment
 compress
-saveold ../publishing/decisions, replace
+saveold ./data/decisions, replace
 
 

@@ -1,5 +1,5 @@
 clear all
-insheet using ../processed/jonasothers.csv, delimit(";") names
+insheet using ./processed/jonasothers.csv, delimit(";") names
 gen byte session = 5 if sessionid=="GYOVF"
 replace  session = 7 if sessionid=="HJSCV"
 replace  session = 8 if sessionid=="AFKYR"
@@ -17,7 +17,7 @@ tempfile jonasq
 save `jonasq'
 
 clear all
-insheet using ../raw/players.csv, clear
+insheet using ./raw_data/players.csv, clear
 rename id ID
 append using `jonasq'
 gen country = 1*(session < 9) + 2*(session>=9)
@@ -40,5 +40,5 @@ label var sex "Your gender"
 label var age "Your age"
 
 compress
-save ../processed/questions, replace
+save ./processed/questions, replace
 

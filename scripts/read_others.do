@@ -1,7 +1,6 @@
 clear all
-set mem 20m
 set more off
-insheet using ../processed/jonasothers.csv, delimit(";") names
+insheet using ./processed/jonasothers.csv, delimit(";") names
 gen byte session = 5 if sessionid=="GYOVF"
 replace  session = 7 if sessionid=="HJSCV"
 replace  session = 8 if sessionid=="AFKYR"
@@ -19,7 +18,7 @@ tempfile jonaso
 save `jonaso'
 
 clear all
-insheet using ../raw/noincentivequestions.csv, comma clear
+insheet using ./raw_data/noincentivequestions.csv, comma clear
 rename id ID
 keep if inlist(question,"BO1","BO2") | item=="o1"
 replace item = "bo0" if item=="o1"
@@ -112,4 +111,4 @@ label values  withonemillion2 with1m
 order ID gambling worktype withonemillion withonemillion2
 
 compress
-save ../processed/others, replace
+save ./processed/others, replace

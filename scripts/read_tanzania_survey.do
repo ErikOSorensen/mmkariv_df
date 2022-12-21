@@ -6,7 +6,7 @@ set more off
 
 
 
-import excel ../raw/data_tanzania_26JUNI.xlsx, ///
+import excel ./raw_data/data_tanzania_26JUNI.xlsx, ///
        sheet("Short follow-up p2") cellrange(B3:G2645) clear firstrow
 replace q = trim(q)
 replace text = trim(text)
@@ -66,9 +66,9 @@ preserve
   save `temp25'
 restore 
 
-save ../tanzaniasurvey_specifications, replace
+save ./tanzaniasurvey_specifications, replace
 
-import excel ../raw/data_tanzania_26JUNI.xlsx, clear ///
+import excel ./raw_data/data_tanzania_26JUNI.xlsx, clear ///
   sheet("Short follow-up p1") cellrange(B3:AK218) firstrow
 
 
@@ -214,11 +214,11 @@ label var survey_id "ID (not linkable to experiment decisions)"
 	Manual recoding of birthplace and study subject
 */ 
 preserve
-	insheet using "../processed/studysubjects_categorized.csv", clear
+	insheet using "./processed/studysubjects_categorized.csv", clear
 	drop n_responses
 	tempfile ss
 	save `ss'
-	insheet using "../processed/birthplaces_categorized.csv", clear
+	insheet using "./processed/birthplaces_categorized.csv", clear
 	drop n_responses
 	tempfile bp
 	save `bp'
@@ -260,7 +260,7 @@ note hrs_week2: Ridiculous hours per week at 4380 (survey_id=109) set to missing
 
 
 
-save ../publishing/tanzaniasurvey, replace
+save ./data/tanzaniasurvey, replace
 
 
 

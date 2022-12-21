@@ -1,11 +1,10 @@
 clear all
-set mem 20m
 set more off
 
 // First, handle the paper data from Tanzania. Replace
 // Big-5 answer with mean answer for that question if
 // two or less are missing for a particular category.
-insheet using ../processed/jonasbig5.csv, clear
+insheet using ./processed/jonasbig5.csv, clear
 
 gen byte sesnr = 5 if sessionid =="GYOVF"
 replace  sesnr = 7 if sessionid =="HJSCV"
@@ -21,7 +20,7 @@ replace ID=805 if ID==705
 tempfile punched
 save `punched'
 
-insheet using ../raw/noincentivequestions.csv, comma clear
+insheet using ./raw_data/noincentivequestions.csv, comma clear
 rename id ID
 keep if inlist(question,"BFS1","BFS2","BFS3", "BFS4")
 destring item, force replace ignore(bf)
@@ -31,7 +30,7 @@ preserve
 drop question
 append using `punched'
 rename item B5item
-save ../publishing/big5items, replace
+save ./data/big5items, replace
 restore
 append using `punched'
 gen acc = inlist(item,1,6,16,21,31,36,2,7,12,17,27,32,37,42,3,8,13,18)
@@ -79,4 +78,4 @@ label var BF_C "Conscientiousness (BFI)"
 label var BF_N "Neuroticism (BFI)"
 label var BF_O "Openness (BFI)"
 sort ID
-save ../processed/big5, replace
+save ./processed/big5, replace

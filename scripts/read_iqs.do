@@ -1,7 +1,7 @@
 clear all
 set more off
 // First, reading in the punched data.
-insheet using ../processed/jonasiq.csv, comma
+insheet using ./processed/jonasiq.csv, comma
 gen byte sesnr = 5 if sessionid =="GYOVF"
 replace  sesnr = 7 if sessionid =="HJSCV"
 replace  sesnr = 8 if sessionid =="AFKYR"
@@ -11,10 +11,10 @@ count if ID==705
 tempfile jonasiq
 save `jonasiq'
 
-insheet using ../raw/iqfasit.csv, comma clear
+insheet using ./raw_data/iqfasit.csv, comma clear
 tempfile iqfasit
 save `iqfasit'
-insheet using ../raw/iqmatrices.csv, comma clear
+insheet using ./raw_data/iqmatrices.csv, comma clear
 rename id ID
 count if ID==705
 append using `jonasiq'
@@ -38,11 +38,11 @@ order ID iqstart mnr ts answer correct point
 keep if answer<.
 drop computerid
 sort ID mnr
-saveold ../publishing/iqmatrices, replace
+saveold ./data/iqmatrices, replace
 tempfile playersiq
 keep if mnr>2
 collapse (sum) iq = point, by(ID)
 label var iq "points on WAIS-IV matrix test (out of 26 possible)"
 order ID
 compress
-save ../processed/playersiq, replace
+save ./processed/playersiq, replace
