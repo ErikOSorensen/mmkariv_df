@@ -1,5 +1,5 @@
 clear all
-insheet using ./processed/jonasothers.csv, delimit(";") names
+insheet using ./raw_data/jonasothers.csv, delimit(";") names
 gen byte session = 5 if sessionid=="GYOVF"
 replace  session = 7 if sessionid=="HJSCV"
 replace  session = 8 if sessionid=="AFKYR"

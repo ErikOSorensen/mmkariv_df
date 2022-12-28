@@ -1,7 +1,7 @@
 clear all
 set more off
 // First, reading in the punched data.
-insheet using ./processed/jonasiq.csv, comma
+insheet using ./raw_data/jonasiq.csv, comma
 gen byte sesnr = 5 if sessionid =="GYOVF"
 replace  sesnr = 7 if sessionid =="HJSCV"
 replace  sesnr = 8 if sessionid =="AFKYR"

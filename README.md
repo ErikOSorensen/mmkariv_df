@@ -1,4 +1,4 @@
-# Preparing data for "The Development Gap in Economic Rationality of Future Elites"
+# Preparing data (assembling, applying metadata) for "The Development Gap in Economic Rationality of Future Elites"
 
 - Alexander W. Cappelen
 - Shachar Kariv
@@ -7,6 +7,40 @@
 
 
 
+## Input data files
+
+These files are included in this preparation package.
+
+| Input file | Description |
+| --- | --- |
+| `raw_data/iqfasit.csv` | Correct answers to each of the iq matrix questions. |
+| `raw_data/iqmatrices.csv` | Submitted answers to iq matrix questions (in sessions with working internet). |
+| `raw_data/noincentivequestions.csv` | Submitted answers to survey (in sessions with working internet). |
+| `raw_data/050112_S9.dta` | Incentivized responses (decisions under uncertainty). Includes some testing data. |
+| `raw_data/data_tanzania_26JUNI.xlsx` | Non-incentivized responses from session without working internet (punched by hand). |
+| `raw_data/jonasiq.csv` | IQ responses from session without working internet (punched by hand). |
+| `raw_data/jonasbig5.csv` | Big-5 responses from session without working internet (punched by hand). |
+| `raw_data/jonasothers.csv` | Other responses from session without working internet (punched by hand). |
+| `processed/birthplaces_categorized.csv` | Birthplace was a free-form input. This file maps freeform response to official region. |
+| `processed/studysubjects_categorized.csv` | Study subject was a free-form input. This file maps freeform responses to a small set of categories. |
+
+## Output files
+
+This files are created by the scripts supplied, and are not themselves included
+in this release. Instead, the output files are available, with documentation,
+at Harvard Dataverse (https://XXX/).
+
+
+| Output file | Description
+| --- | --- |
+| `data/background.dta` | Demographics and responses to non-incentivized questions, calculated Big-5 and IQ scores. |
+| `data/big5items.dta`  | Responses to each of the items in the Big-5 questionnaire. |
+| `data/decisions.dta`  | Each decision from of each of the participants. |
+| `data/iqmatrices.dta` | Each response to a matrix progression question from each of the participants. |
+| `data/tanzaniasurvey.dta` | Responses to a Tanzania-only post-experiment survey (cannot be linked to rest of experiment). |
+
+Some intermediate outputs are saved in the  `processed/` directory, but these
+are not part of the canonical output.
 
 ## Running script with AEA docker container
 

@@ -4,7 +4,7 @@ set more off
 // First, handle the paper data from Tanzania. Replace
 // Big-5 answer with mean answer for that question if
 // two or less are missing for a particular category.
-insheet using ./processed/jonasbig5.csv, clear
+insheet using ./raw_data/jonasbig5.csv, clear
 
 gen byte sesnr = 5 if sessionid =="GYOVF"
 replace  sesnr = 7 if sessionid =="HJSCV"
