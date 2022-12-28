@@ -1,0 +1,38 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Preparing data for "The Development Gap in Economic
+  Rationality of Future Elites"
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Alexander W.
+    family-names: Cappelen
+    affiliation: NHH Norwegian School of Economics
+    orcid: 'https://orcid.org/0000-0002-3489-7085'
+  - given-names: Shachar
+    family-names: Kariv
+    affiliation: 'University of California, Berkeley'
+    orcid: 'https://orcid.org/0000-0002-1382-3917'
+  - given-names: Erik Ø.
+    family-names: Sørensen
+    email: erik.sorensen@nhh.no
+    affiliation: NHH Norwegian School of Economics
+    orcid: 'https://orcid.org/0000-0002-7155-4188'
+  - given-names: Bertil
+    family-names: Tungodden
+    affiliation: NHH Norwegian School of Economics
+    orcid: 'https://orcid.org/0000-0002-4182-8491'
+abstract: >-
+  This software assembles raw data (also provided)
+  and applies metadata to data collected from a
+  two-site study (Berkeley and Dar-es-Salaam) on
+  rationality in decisions involving uncertainty. The
+  scripts are written in Stata, and an explanation of
+  how they are run using the AEA Stata docker
+  container is supplied.
+license: MIT
