@@ -8,3 +8,4 @@ do scripts/read_big5.do
 do scripts/read_others.do
 do scripts/read_questions.do
 do scripts/merge_background.do
+cp raw_data/calculated_RP_measures.dta data/calculated_RP_measures.dta, replace
