@@ -21,6 +21,7 @@ These files are included in this preparation package.
 | `raw_data/jonasiq.csv` | IQ responses from session without working internet (punched by hand). |
 | `raw_data/jonasbig5.csv` | Big-5 responses from session without working internet (punched by hand). |
 | `raw_data/jonasothers.csv` | Other responses from session without working internet (punched by hand). |
+| `raw_data/calculated_RP_measures.dta`| Pre-calculated Revealed Preference measures following Pollison et al. |
 | `processed/birthplaces_categorized.csv` | Birthplace was a free-form input. This file maps freeform response to official region. |
 | `processed/studysubjects_categorized.csv` | Study subject was a free-form input. This file maps freeform responses to a small set of categories. |
 
@@ -38,6 +39,7 @@ at Harvard Dataverse (https://XXX/).
 | `data/decisions.dta`  | Each decision from of each of the participants. |
 | `data/iqmatrices.dta` | Each response to a matrix progression question from each of the participants. |
 | `data/tanzaniasurvey.dta` | Responses to a Tanzania-only post-experiment survey (cannot be linked to rest of experiment). |
+| `data/calculated_RP_measures.dta`| Pre-calculated Revealed Preference measures following Pollison et al.|
 
 Some intermediate outputs are saved in the  `processed/` directory, but these
 are not part of the canonical output.
