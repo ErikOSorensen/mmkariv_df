@@ -30,6 +30,7 @@ preserve
 drop question
 append using `punched'
 rename item B5item
+keep ID B5item answer
 save ./data/big5items, replace
 restore
 append using `punched'

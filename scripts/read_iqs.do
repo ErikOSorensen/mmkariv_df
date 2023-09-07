@@ -38,6 +38,7 @@ order ID iqstart mnr ts answer correct point
 keep if answer<.
 drop computerid
 sort ID mnr
+keep ID iqstart mnr ts answer correct point
 saveold ./data/iqmatrices, replace
 tempfile playersiq
 keep if mnr>2

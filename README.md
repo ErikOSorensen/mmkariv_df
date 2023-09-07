@@ -28,7 +28,7 @@ These files are included in this preparation package.
 
 These files are created by the scripts supplied, and are not themselves included
 in this release. Instead, the output files are available, with documentation,
-at Harvard Dataverse (https://XXX/).
+at Harvard Dataverse (https://doi.org/10.7910/DVN/CCODET).
 
 
 | Output file | Description |
