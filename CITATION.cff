@@ -35,4 +35,4 @@ abstract: >-
   scripts are written in Stata, and an explanation of
   how they are run using the AEA Stata docker
   container is supplied.
-license: MIT
+license: CC0
