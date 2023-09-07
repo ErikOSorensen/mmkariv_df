@@ -31,14 +31,14 @@ in this release. Instead, the output files are available, with documentation,
 at Harvard Dataverse (https://XXX/).
 
 
-| Output file | Description
+| Output file | Description |
 | --- | --- |
 | `data/background.dta` | Demographics and responses to non-incentivized questions, calculated Big-5 and IQ scores. |
 | `data/big5items.dta`  | Responses to each of the items in the Big-5 questionnaire. |
 | `data/decisions.dta`  | Each decision from of each of the participants. |
 | `data/iqmatrices.dta` | Each response to a matrix progression question from each of the participants. |
 | `data/tanzaniasurvey.dta` | Responses to a Tanzania-only post-experiment survey (cannot be linked to rest of experiment). |
-| `data/calculated_RP_measures.dta`| Pre-calculated Revealed Preference measures following Pollison et al.|
+| `data/studysubjects_categorized` | Study subject was a free-form input. This file maps freeform responses to a small set of categories. |
 
 Some intermediate outputs are saved in the  `processed/` directory, but these
 are not part of the canonical output.
